@@ -46,3 +46,13 @@ CREATE TABLE alliance_members (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
+CREATE TABLE trades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_id INT NOT NULL,
+    receiver_id INT NOT NULL,
+    resource_type VARCHAR(50),
+    amount INT NOT NULL,
+    status ENUM('pending', 'completed', 'canceled') DEFAULT 'pending',
+    FOREIGN KEY (sender_id) REFERENCES users(id),
+    FOREIGN KEY (receiver_id) REFERENCES users(id)
+);
