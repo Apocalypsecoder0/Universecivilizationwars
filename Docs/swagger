@@ -1,0 +1,17 @@
+swagger: '2.0'
+info:
+  description: API for the game
+  version: 1.0.0
+  title: Game API
+paths:
+  /login:
+    post:
+      summary: User login
+      parameters:
+        - name: username
+          in: body
+          required: true
+          type: string
+      responses:
+        200:
+          description: Successful login
