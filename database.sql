@@ -56,3 +56,10 @@ CREATE TABLE trades (
     FOREIGN KEY (sender_id) REFERENCES users(id),
     FOREIGN KEY (receiver_id) REFERENCES users(id)
 );
+CREATE TABLE unit_types (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    attack INT,
+    defense INT,
+    special_ability VARCHAR(100)
+);
