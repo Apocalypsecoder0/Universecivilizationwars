@@ -1,0 +1,16 @@
+/my_game/
+│
+├── index.php
+├── login.php
+├── logout.php
+├── register.php
+├── game.php
+│
+├── /css/
+│   └── styles.css
+│
+├── /js/
+│   └── scripts.js
+│
+└── /sql/
+    └── database.sql
